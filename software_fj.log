@@ -1,0 +1,112 @@
+2026-11-22 02:48:02 | INFO | ============================================================
+2026-11-22 02:48:02 | INFO | Inicio de la simulación de Software FJ (Fase 4).
+2026-11-22 02:48:02 | INFO | Cliente registrado: CLI-0001 | Laura Gómez | doc. 1024567890 | laura.gomez@correo.com | tel. 3001234567
+2026-11-22 02:48:02 | INFO | Cliente registrado: CLI-0002 | Carlos Ramírez | doc. 79543210 | carlos.ramirez@correo.com | tel. 3109876543
+2026-11-22 02:48:02 | INFO | Cliente registrado: CLI-0003 | Andrea Torres | doc. 1123456789 | andrea.torres@correo.com | tel. 3205554433
+2026-11-22 02:48:02 | ERROR | Cliente rechazado (documento='1030456789', nombre='Juan Pérez', correo='juan.perezcorreo.com'): El correo 'juan.perezcorreo.com' no tiene un formato válido.
+2026-11-22 02:48:02 | ADVERTENCIA | Operación 04 rechazada: ErrorDatosInvalidos: El correo 'juan.perezcorreo.com' no tiene un formato válido.
+2026-11-22 02:48:02 | ERROR | Cliente rechazado (documento='', nombre='Marta Salazar', correo='marta.salazar@correo.com'): El documento del cliente no puede estar vacío.
+2026-11-22 02:48:02 | ADVERTENCIA | Operación 05 rechazada: ErrorDatosInvalidos: El documento del cliente no puede estar vacío.
+2026-11-22 02:48:02 | INFO | Intento de creación de servicio finalizado (tipo='sala').
+2026-11-22 02:48:02 | INFO | Intento de creación de servicio finalizado (tipo='equipo').
+2026-11-22 02:48:02 | INFO | Intento de creación de servicio finalizado (tipo='asesoria').
+2026-11-22 02:48:02 | ERROR | Servicio de tipo 'sala' rechazado: La tarifa base no puede ser negativa (recibido: -20000).
+2026-11-22 02:48:02 | INFO | Intento de creación de servicio finalizado (tipo='sala').
+2026-11-22 02:48:02 | ADVERTENCIA | Operación 09 rechazada: ErrorDatosInvalidos: La tarifa base no puede ser negativa (recibido: -20000).
+2026-11-22 02:48:02 | ERROR | Servicio de tipo 'sala' rechazado: La sala requiere la capacidad de personas (parámetro faltante).
+2026-11-22 02:48:02 | INFO | Intento de creación de servicio finalizado (tipo='sala').
+2026-11-22 02:48:02 | ADVERTENCIA | Operación 10 rechazada: ErrorDatosInvalidos: La sala requiere la capacidad de personas (parámetro faltante).
+2026-11-22 02:48:02 | INFO | Sobrecarga de costo en SRV-0001 - a) tarifa base por duración: $307.000,00
+2026-11-22 02:48:02 | INFO | Sobrecarga de costo en SRV-0001 - b) tarifa con descuento del 10%: $276.300,00
+2026-11-22 02:48:02 | INFO | Sobrecarga de costo en SRV-0001 - c) tarifa con descuento e IVA del 19%: $328.797,00
+2026-11-22 02:48:02 | INFO | Reserva creada: RES-0001 | Laura Gómez | Sala Aurora | 4 horas | PENDIENTE | costo $328.797,00 | cliente 1024567890 | servicio SRV-0001
+2026-11-22 02:48:02 | INFO | Reserva RES-0001 confirmada. Costo total: $328.797,00
+2026-11-22 02:48:02 | INFO | Estado de la reserva RES-0001 tras confirmación: CONFIRMADA.
+2026-11-22 02:48:02 | INFO | Reserva RES-0001 procesada para facturación.
+2026-11-22 02:48:02 | INFO | Estado de la reserva RES-0001 tras procesamiento: PROCESADA.
+2026-11-22 02:48:02 | INFO | Reserva creada: RES-0002 | Carlos Ramírez | Alquiler de video beam | 3 días | PENDIENTE | costo $255.360,00 | cliente 79543210 | servicio SRV-0002
+2026-11-22 02:48:02 | INFO | Reserva RES-0002 confirmada. Costo total: $255.360,00
+2026-11-22 02:48:02 | INFO | Estado de la reserva RES-0002 tras confirmación: CONFIRMADA.
+2026-11-22 02:48:02 | INFO | Reserva RES-0002 cancelada. Motivo: el cliente reprogramó la actividad.
+2026-11-22 02:48:02 | INFO | Estado de la reserva RES-0002 tras cancelación: CANCELADA.
+2026-11-22 02:48:02 | INFO | Reserva creada: RES-0003 | Andrea Torres | Asesoría en redes | 2 horas | PENDIENTE | costo $271.150,00 | cliente 1123456789 | servicio SRV-0003
+2026-11-22 02:48:02 | INFO | Reserva RES-0003 confirmada. Costo total: $271.150,00
+2026-11-22 02:48:02 | INFO | Estado de la reserva RES-0003 tras confirmación: CONFIRMADA.
+2026-11-22 02:48:02 | ADVERTENCIA | Servicio SRV-0001 fuera de servicio.
+2026-11-22 02:48:02 | ADVERTENCIA | Reserva rechazada: El servicio 'Sala Aurora' no está disponible para reservas.
+2026-11-22 02:48:02 | ADVERTENCIA | Operación 21 rechazada: ErrorServicioNoDisponible: El servicio 'Sala Aurora' no está disponible para reservas.
+2026-11-22 02:48:02 | ADVERTENCIA | Servicio SRV-0001 habilitado.
+2026-11-22 02:48:02 | ADVERTENCIA | Reserva rechazada: La duración debe ser mayor que cero (recibido: 0).
+2026-11-22 02:48:02 | ADVERTENCIA | Operación 23 rechazada: ErrorReservaInvalida: La duración debe ser mayor que cero (recibido: 0).
+2026-11-22 02:48:02 | ADVERTENCIA | Cancelación rechazada: La reserva RES-0001 ya fue procesada y no admite cancelación.
+2026-11-22 02:48:02 | INFO | Estado de la reserva RES-0001 tras cancelación: PROCESADA.
+2026-11-22 02:48:02 | ADVERTENCIA | Operación 24 rechazada: ErrorReservaInvalida: La reserva RES-0001 ya fue procesada y no admite cancelación.
+2026-11-22 02:48:02 | ADVERTENCIA | Reserva rechazada: No se puede reservar: el cliente '999999999' no está registrado.
+2026-11-22 02:48:02 | ADVERTENCIA | Operación 25 rechazada: ErrorReservaInvalida: No se puede reservar: el cliente '999999999' no está registrado.
+2026-11-22 02:48:02 | ERROR | Reserva rechazada por inconsistencia en el costo: El descuento 60% está fuera del rango permitido (0% - 50%).
+2026-11-22 02:48:02 | ADVERTENCIA | Operación 26 rechazada: ErrorReservaInvalida: Reserva rechazada por inconsistencia en el costo: El descuento 60% está fuera del rango permitido (0% - 50%).
+2026-11-22 02:48:02 | ERROR | Servicio de tipo 'transporte' rechazado: El tipo de servicio 'transporte' no existe.
+2026-11-22 02:48:02 | INFO | Intento de creación de servicio finalizado (tipo='transporte').
+2026-11-22 02:48:02 | ADVERTENCIA | Operación 27 rechazada: ErrorDatosInvalidos: El tipo de servicio 'transporte' no existe.
+2026-11-22 02:48:02 | INFO | Clientes en memoria: 3
+2026-11-22 02:48:02 | INFO | Servicios en memoria: 3
+2026-11-22 02:48:02 | INFO | Reservas en memoria: 3
+2026-11-22 02:48:02 | INFO | Estados de las reservas: {'PENDIENTE': 0, 'CONFIRMADA': 1, 'CANCELADA': 1, 'PROCESADA': 1}
+2026-11-22 02:48:02 | INFO | Ingresos estimados: $599.947,00
+2026-11-22 02:48:02 | INFO | Fin de la simulación. El sistema terminó sin interrupciones.
+2026-11-21 14:19:31 | INFO | ============================================================
+2026-11-21 14:19:31 | INFO | Inicio de la simulación de Software FJ (Fase 4).
+2026-11-21 14:19:31 | INFO | Cliente registrado: CLI-0001 | Laura Gómez | doc. 1024567890 | laura.gomez@correo.com | tel. 3001234567
+2026-11-21 14:19:31 | INFO | Cliente registrado: CLI-0002 | Carlos Ramírez | doc. 79543210 | carlos.ramirez@correo.com | tel. 3109876543
+2026-11-21 14:19:31 | INFO | Cliente registrado: CLI-0003 | Andrea Torres | doc. 1123456789 | andrea.torres@correo.com | tel. 3205554433
+2026-11-21 14:19:31 | ERROR | Cliente rechazado (documento='1030456789', nombre='Juan Pérez', correo='juan.perezcorreo.com'): El correo 'juan.perezcorreo.com' no tiene un formato válido.
+2026-11-21 14:19:31 | ADVERTENCIA | Operación 04 rechazada: ErrorDatosInvalidos: El correo 'juan.perezcorreo.com' no tiene un formato válido.
+2026-11-21 14:19:31 | ERROR | Cliente rechazado (documento='', nombre='Marta Salazar', correo='marta.salazar@correo.com'): El documento del cliente no puede estar vacío.
+2026-11-21 14:19:31 | ADVERTENCIA | Operación 05 rechazada: ErrorDatosInvalidos: El documento del cliente no puede estar vacío.
+2026-11-21 14:19:31 | INFO | Intento de creación de servicio finalizado (tipo='sala').
+2026-11-21 14:19:31 | INFO | Intento de creación de servicio finalizado (tipo='equipo').
+2026-11-21 14:19:31 | INFO | Intento de creación de servicio finalizado (tipo='asesoria').
+2026-11-21 14:19:31 | ERROR | Servicio de tipo 'sala' rechazado: La tarifa base no puede ser negativa (recibido: -20000).
+2026-11-21 14:19:31 | INFO | Intento de creación de servicio finalizado (tipo='sala').
+2026-11-21 14:19:31 | ADVERTENCIA | Operación 09 rechazada: ErrorDatosInvalidos: La tarifa base no puede ser negativa (recibido: -20000).
+2026-11-21 14:19:31 | ERROR | Servicio de tipo 'sala' rechazado: La sala requiere la capacidad de personas (parámetro faltante).
+2026-11-21 14:19:31 | INFO | Intento de creación de servicio finalizado (tipo='sala').
+2026-11-21 14:19:31 | ADVERTENCIA | Operación 10 rechazada: ErrorDatosInvalidos: La sala requiere la capacidad de personas (parámetro faltante).
+2026-11-21 14:19:31 | INFO | Sobrecarga de costo en SRV-0001 - a) tarifa base por duración: $307.000,00
+2026-11-21 14:19:31 | INFO | Sobrecarga de costo en SRV-0001 - b) tarifa con descuento del 10%: $276.300,00
+2026-11-21 14:19:31 | INFO | Sobrecarga de costo en SRV-0001 - c) tarifa con descuento e IVA del 19%: $328.797,00
+2026-11-21 14:19:31 | INFO | Reserva creada: RES-0001 | Laura Gómez | Sala Aurora | 4 horas | PENDIENTE | costo $328.797,00 | cliente 1024567890 | servicio SRV-0001
+2026-11-21 14:19:31 | INFO | Reserva RES-0001 confirmada. Costo total: $328.797,00
+2026-11-21 14:19:31 | INFO | Estado de la reserva RES-0001 tras confirmación: CONFIRMADA.
+2026-11-21 14:19:31 | INFO | Reserva RES-0001 procesada para facturación.
+2026-11-21 14:19:31 | INFO | Estado de la reserva RES-0001 tras procesamiento: PROCESADA.
+2026-11-21 14:19:31 | INFO | Reserva creada: RES-0002 | Carlos Ramírez | Alquiler de video beam | 3 días | PENDIENTE | costo $255.360,00 | cliente 79543210 | servicio SRV-0002
+2026-11-21 14:19:31 | INFO | Reserva RES-0002 confirmada. Costo total: $255.360,00
+2026-11-21 14:19:31 | INFO | Estado de la reserva RES-0002 tras confirmación: CONFIRMADA.
+2026-11-21 14:19:31 | INFO | Reserva RES-0002 cancelada. Motivo: el cliente reprogramó la actividad.
+2026-11-21 14:19:31 | INFO | Estado de la reserva RES-0002 tras cancelación: CANCELADA.
+2026-11-21 14:19:31 | INFO | Reserva creada: RES-0003 | Andrea Torres | Asesoría en redes | 2 horas | PENDIENTE | costo $271.150,00 | cliente 1123456789 | servicio SRV-0003
+2026-11-21 14:19:31 | INFO | Reserva RES-0003 confirmada. Costo total: $271.150,00
+2026-11-21 14:19:31 | INFO | Estado de la reserva RES-0003 tras confirmación: CONFIRMADA.
+2026-11-21 14:19:31 | ADVERTENCIA | Servicio SRV-0001 fuera de servicio.
+2026-11-21 14:19:31 | ADVERTENCIA | Reserva rechazada: El servicio 'Sala Aurora' no está disponible para reservas.
+2026-11-21 14:19:31 | ADVERTENCIA | Operación 21 rechazada: ErrorServicioNoDisponible: El servicio 'Sala Aurora' no está disponible para reservas.
+2026-11-21 14:19:31 | ADVERTENCIA | Servicio SRV-0001 habilitado.
+2026-11-21 14:19:31 | ADVERTENCIA | Reserva rechazada: La duración debe ser mayor que cero (recibido: 0).
+2026-11-21 14:19:31 | ADVERTENCIA | Operación 23 rechazada: ErrorReservaInvalida: La duración debe ser mayor que cero (recibido: 0).
+2026-11-21 14:19:31 | ADVERTENCIA | Cancelación rechazada: La reserva RES-0001 ya fue procesada y no admite cancelación.
+2026-11-21 14:19:31 | INFO | Estado de la reserva RES-0001 tras cancelación: PROCESADA.
+2026-11-21 14:19:31 | ADVERTENCIA | Operación 24 rechazada: ErrorReservaInvalida: La reserva RES-0001 ya fue procesada y no admite cancelación.
+2026-11-21 14:19:31 | ADVERTENCIA | Reserva rechazada: No se puede reservar: el cliente '999999999' no está registrado.
+2026-11-21 14:19:31 | ADVERTENCIA | Operación 25 rechazada: ErrorReservaInvalida: No se puede reservar: el cliente '999999999' no está registrado.
+2026-11-21 14:19:31 | ERROR | Reserva rechazada por inconsistencia en el costo: El descuento 60% está fuera del rango permitido (0% - 50%).
+2026-11-21 14:19:31 | ADVERTENCIA | Operación 26 rechazada: ErrorReservaInvalida: Reserva rechazada por inconsistencia en el costo: El descuento 60% está fuera del rango permitido (0% - 50%).
+2026-11-21 14:19:31 | ERROR | Servicio de tipo 'transporte' rechazado: El tipo de servicio 'transporte' no existe.
+2026-11-21 14:19:31 | INFO | Intento de creación de servicio finalizado (tipo='transporte').
+2026-11-21 14:19:31 | ADVERTENCIA | Operación 27 rechazada: ErrorDatosInvalidos: El tipo de servicio 'transporte' no existe.
+2026-11-21 14:19:31 | INFO | Clientes en memoria: 3
+2026-11-21 14:19:31 | INFO | Servicios en memoria: 3
+2026-11-21 14:19:31 | INFO | Reservas en memoria: 3
+2026-11-21 14:19:31 | INFO | Estados de las reservas: {'PENDIENTE': 0, 'CONFIRMADA': 1, 'CANCELADA': 1, 'PROCESADA': 1}
+2026-11-21 14:19:31 | INFO | Ingresos estimados: $599.947,00
+2026-11-21 14:19:31 | INFO | Fin de la simulación. El sistema terminó sin interrupciones.
